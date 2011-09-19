@@ -1,0 +1,28 @@
+---
+embedTemplate: <object width="%2$s" height="%3$s" ><param name="movie" value="%1$s"></param><param name="wmode" value="transparent"></param><embed src="%1$s" type="application/x-shockwave-flash" wmode="transparent" width="%2$s" height="%3$s"></embed></object>
+defaultWidth: 425
+defaultHeight: 350
+services:
+    youtube:
+        urlPattern: youtube.com
+        embedUrlTemplate: http://www.youtube.com/v/%1$s&rel=1
+        thumbnailUrlTemplate: http://i.ytimg.com/vi/%1$s/default.jpg
+        extractPattern: /youtube\.com\/(v\/|watch\?v=)([\w\-]+)/
+        apiUrl: http://www.youtube.com/api2_rest
+        defaultWidth: 425
+        defaultHeight: 350
+    google:
+        urlPattern: video.google
+        extractPattern: /docid=([^&]*)/i
+        embedUrlTemplate: http://video.google.com/googleplayer.swf?docId=%1$s
+        thumbnailUrlTemplate: http://video.google.com/videofeed?docid=%s
+        thumbnailUrlExtractPattern: '/<media:thumbnail url="([^"]+)/'
+        defaultWidth: 400
+        defaultHeight: 326
+    dailymotion:
+        urlPattern: dailymotion.com
+        embedUrlTemplate: http://www.dailymotion.com/swf/%1$s/
+        thumbnailUrlTemplate: http://www.dailymotion.com/thumbnail/160x120/video/%1$s/
+        extractPattern: '#/(video|swf)/([a-zA-Z0-9]+)[^a-zA-Z0-9]#'
+        defaultWidth: 425
+        defaultHeight: 350
