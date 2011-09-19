@@ -38,7 +38,7 @@ require_once (SITEBASE . '/include/vendor/yaml/spyc.php');
 * @access public
 * @todo thumbnails should be cached locally
 *
-* VideoEmbed class  canused to safely and cleanly embed videos from different sources
+* VideoEmbed class  can be used to safely and cleanly embed videos from different sources
 *
 * The different sources are configured in the video_embed.yaml file
 *
