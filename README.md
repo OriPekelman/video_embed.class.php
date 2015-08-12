@@ -1,3 +1,5 @@
+# [NOT MAINTAINED]
+
 # VideoEmbed class  can be used to safely and cleanly embed videos from different sources
 
 I looked for a nice clean class implementation in PHP for embedding videos from youtube and such and could not find anything that was nice enough. So here is my take on embedding videos in php.
